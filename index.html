@@ -8,227 +8,23 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <styl rel="manifest" href="/site.webmanifest">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet"  href="style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-  <style>
-  
-    body {
-      /* margin: 0; */
-      background: linear-gradient(to right, rgb(110, 123, 162), rgb(144, 169, 120));
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    .myHead {
-      background-color: rgb(57, 45, 97);
-      height: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 20px;
-      position: sticky;
-      top: 0;
-    }
-    
-    .myHead .logo img {
-      position: relative;
-      left: 250px;
-      width: 100px;
-      height: 100px;
-      border-radius: 50px;
-    }
-    
-    .myHead .navbar {
-      display: flex;
-      gap: 20px;
-    }
-    
-    .myHead .navbar a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    
-    .myHead .navbar a:hover {
-      cursor: pointer;
-      background-color: rgb(48, 228, 241);
-    }
-    
-    #photo{
-      
-      background: linear-gradient(to top right, rgb(49, 112, 184), rgb(25, 220, 25), rgb(51, 51, 134));
-      display: flex;
-      justify-content: center;
-    }
-    
-    #photo img {
-      background: white;
-      width: 200px;
-      height: 240px;
-      margin: 0 20px;
-      border-radius: 50%;
-    }
-    h2 {
-      font-family: "Poppins", sans-serif;
-      padding-top: 100px;
-      font-weight: 800;
-      font-size: 30px;
-    }
-    #features {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      /* margin: 50px 0; */
-    }
-    #features section {
-      background-color: rgb(250, 246, 246);
-      border: 2px solid #0b8488;
-      border-radius: 5px;
-      margin: 10px;
-      text-align: center;
-      padding: 20px;
-      transition: transform 0.3s, box-shadow 0.3s;
-      /* width: 300px; */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    #features>section>a{
-      text-decoration: none;
-    }
-    #features section:hover {
-      /* transform: translateY(-10px); */
-      box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
-    }
-    
-    #features h3 {
-      font-size: 1.5rem;
-      margin: 0;
-      margin-bottom: 20px;
-      color: #0d1721;
-    }
-    #features>section> p {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1.2rem;
-      line-height: 1.5;
-      margin-bottom: 20px;
-      color: rgb(12, 12, 12);
-    }
-    #features img {
-      width: 50px;
-      height: 50px;
-    }
-    #resume > .res > p{
-      font-size: large;
-    }
-    #about > .ab >p{
-      font-size: large;
-    }
-    #contacts p a img{
-      border-radius: 50px;
-      height: 25px;
-      width: 25px;
-    }
-    #contacts p a{
-      text-decoration: none;
-    }
-    #services > .serv >p{
-      font-size: larger;
-    }
-    span {
-    content: "\21A0";
-    }
-    #start{
-      content: "\201C";
-    }
-    #end{
-      content: "\201D";
-    }
 
-    .project img{
-      width: 500px;
-      height: 300px;
-    }
-    footer {
-      background: linear-gradient(to bottom left, rgb(4, 0, 0) 20px,white, rgb(230, 10, 10),white, green 90%);
-      text-align: center;
-      padding: 10px 0;
-    }
-    footer p {
-      margin: 0;
-      color: #fff;
-    }
-    @media screen and (max-width: 800px) {
-  
-    body {
-      background-color: #0b8488;
-      width: auto;
-      font-size: 15px;
-    }
-    .myHead{
-      height: 30px;
-      position: sticky
-    }
-    .myHead > .logo {
-        display: none;
-    }
-
-    .myHead .navbar {
-        /* flex-direction: column; */
-        gap: 4px;
-        /* margin-top: 280px; */
-        overflow-y: hidden;
-    }
-
-    .myHead .navbar a {
-        font-size: 0.68rem;
-    } 
-    #photo{
-      background-image: linear-gradient(to top right, rgb(49, 112, 184), rgb(25, 220, 25), rgb(51, 51, 134));
-      display: flex;
-      justify-content: center;
-      position: sticky;
-      /* margin: 1px 0; */
-    }
-    
-    #photo img {
-      background: white;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-    }
-    h2 {
-      font-family: "Poppins", sans-serif;
-      padding-top: 10px;
-      font-weight: 800;
-      font-size: 17px;
-    }
-    .project img {
-        width: 100%;
-        height: auto; 
-    }
-
-    #contacts p a img {
-        width: 20px; 
-        height: 20px;
-    }
-    footer{
-      width: auto;
-    }
-}
-</style>
 
 <body>
+  
   <div class="myHead">
-    <div class="logo">
-      <img src="logo.png" alt="Logo">
+    <div class="name">
+      <h4>BONIFACE MUENDO</h4><hr><h5>Programmer</h5>
     </div>
     <div class="navbar">
-      <a onclick="Scroll(this)" data-href="home">HOME</a>
-      <a onclick="Scroll(this)" data-href="about">ABOUT</a>
-      <a onclick="Scroll(this)" data-href="portfolio">PORTFOLIO</a>
-      <a onclick="Scroll(this)" data-href="resume">RESUME</a>
-      <a onclick="Scroll(this)" data-href="services">SERVICES</a>
-      <a onclick="Scroll(this)" data-href="reviews">REVIEWS</a>
-      <a onclick="Scroll(this)" data-href="contacts">CONTACTS</a>
+      <a href="index.html">PORTFOLIO</a><hr>
+      <a href="#resume">RESUME</a><hr>
+      <a href="#services">SERVICES</a><hr>
+      <a href="#contacts">CONTACTS</a>
     </div>
   </div>
 
@@ -236,159 +32,120 @@
     <h2>BONIFACE</h2>
     <img src="./images/newme.png" alt="My Photo" >
     <h2>MUENDO</h2>
-    
+    <cite><h4 class="role">I'm a Full-Stack Developer</h4></cite>
   </section>
-
-  <div id="features">
-
-    <section id="home">
-      <img src="./images/home.png" alt="Home Icon" width="50" height="50">
-      <h3>HOME</h3>
-      <p>Great! Welome to my
-        personal website. Enjoy in interacting with my website.
-      </p>
-      <p>
-        <span class="start">&#8220;</span>I believe that the web has the power to transform businesses and make the world more connected, and I'm excited to be a part of that journey.<span class="end">&#8221;</span>
-      </p>
-    </section>
-
-    <section id="about">
-      <i class="fa fa-code" style="font-size: 36px"></i>
-      <h3>ABOUT</h3>
-      <div class="ab">
+      <div id="circ">
+        <h2>HELLO!</h2>
+        <fieldset>
+          <h3>ABOUT ME</h3>
         <p>
-          I'm a passionate and experienced web developer with a love for coding and creating exceptional online experiences. With a background in both front-end and back-end development, I bring a diverse skill set to every project.
-      </p>
-      <p>
+          I'm a passionate and experienced <b style="color: rgb(231, 31, 13);">web developer</b> with a love for coding and creating exceptional online experiences. With a background in both front-end and back-end development, I bring a diverse skill set to every project.
+        </p>
+          <p>
           My journey in web development began several years ago, and I've had the privilege of working on a wide range of projects, from building responsive websites to developing custom web applications. I'm dedicated to delivering high-quality work, and I'm always eager to learn and embrace new technologies to stay on the cutting edge of the industry.
-      </p>
-      </div>
-    </section>
-  
-    <section id="portfolio">
-      <img src="./images/portfolio.jpg" width="50" height="50">
-      <h3>PORTFOLIO</h3>
-      
-      <div class="project">
-        <h4>Project 1</h4>
-          <img src="./images/myweb.png">
-          <p>
-              A visually stunning website of my owm. I was responsible for front-end development and user interface design.
-          </p>
-          <a href="home.html" target="_blank">View Project</a>
-      </div>
-      
-      <div class="project">
-        <h4>Project 2</h4>
-          <img src="./images/sms.png">
-          <p>
-              An Stock Management System with a focus on user experience. I handled front-end development.
-          </p>
-          <a href="hosted.html" target="_blank">View Project</a>
-      </div>
-      
-      <div class="project">
-          <h4>More Projects under other languages.</h4>
-      </div>
-    </section>
-
-    <section id="resume">
-      <img src="./images/resume.jpg" alt="Resume Icon" width="50" height="50">
-      <h3>RESUME</h3>
-      <div class="res">
-        <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const documentLink = document.getElementById("document");
-            documentLink.addEventListener("click", function(event) {
-                event.preventDefault();
-                window.open(documentLink.href, "_blank");
-            });
-        });
-        </script>
-        <p>I am a dedicated and results-driven professional with a strong background in Web development industry, offering 2+ years of experience. Throughout my career, I have demonstrated a passion for programming, and I'm committed to delivering high-quality work that meets and exceeds expectations. I take pride in my ability to HTML ,CSS JS & PHP and I am constantly seeking opportunities to learn and grow in my field. Please explore my <a id="document" target="_blank" href="myresume.docx">RESUME</a> to learn more about my qualifications, and feel free to reach out if you believe I can contribute to your team or project.</p>
-      </div>
-    </section>
-
-    <section id="services">
-      <img src="./images/services.png" alt="Services Icon" width="50" height="50">
-      <h3>SERVICES</h3>
-      <div class="serv">
-        <ol>
-          <p>
-            <span>&#8608;</span>Website Development.<br>
-            <span>&#8608;</span>Front-End Development.<br>
-            <span>&#8608;</span> Back-End Development.<br>
-            <span>&#8608;</span>Full-Stack Development.<br>
-            <span>&#8608;</span>Web Design.<br>
-            <span>&#8608;</span>Custom Web Applications.<br>
-            <span>&#8608;</span>Building custom web applications tailored to a client's specific needs.<p>
-            <span>&#8608;</span>Developing web-based tools, dashboards, and systems.
-          </p>
-        </ol>
-      </div>
-    </section>
-
-    <section id="reviews">
-      <img src="./images/reviews.png" alt="Reviews Icon" width="50" height="50">
-      <h3>REVIEWS</h3>
-          <p>
-            <h4>ALFRED OGINGA</h4>
-            Great services! I'm very satisfied with the project I gave you.
-          </p>
-     
-          <p>
-            <h4 style="font-weight: bolder;">PURITY WANJA</h4>
-            Excellent service and fast delivery. Highly recommended!
-          </p>
-
-          <p>
-            <h4>VINCENT MBALOZI</h4>
-            Good quality and reasonable User Interface Design. Keep it up!.
-          </p>
-          <p>
-            <h4>NICHOLAS WAMBUA</h4>
-            He left a great a <a href="https://www.google.com/maps/contrib/103733529540882224637?hl=en-US" target="_blank">review</a> rush to view it.
-          </p>
-    </section>
-
-    <section id="contacts">
-    <img src="./images/contact.jpg" width="50" height="50">
-    <h3>CONTACTS</h3>
-    <p>
-        I'm active on several social media platforms and would love to connect with you. Feel free to reach out to me through the following channels:
-        <br>
-        <a href="whatsapp://send?phone=0705200170&text=Hello,%20I%20would%20like%20to%20chat" target="_blank">
-          <img src="./images/whatsap.jpg" >
-        </a>
-        <a href="tg://msg?text=Hello,%20Hello%20there!%20 %20I%20like%20to%20chat">
-          <img src="./images/telegram.jpg" >
-        </a>
-        <a href="https://www.facebook.com/boniface.muendo.585" target="_blank">
-          <img src="./images/facebook.jpg">
-        </a>
-        <d href="https://www.linkedin.com/in/boniface-muendo-230352237" target="_blank">
-            <div src="./images/linkedin.png">
+        </p>
+        </fieldset>
+      </HELLO!<>
+      <div class="tabs">
+        <div id="openProjects">
+          <a href="#projects">Projects</a>
         </div>
-        <a href="https://twitter.com/bmuendo336" target="_blank">
-          <img src="./images/twitter.png">
-        </a>
-        <br>
-        <p>You can also contact me via email at <a href="mailto:bmuendo336@gmail.com">my email</a></p>
-      </p>
-    </section>
-  </div>
+        <div id="openResume">
+          <a href="#resume">Resume</a>
+        </div>
+        <div id="openServices">
+          <a href="#services">Services</a>
+        </div>
+        <div id="openContact">
+          <a href="#contacts">Contacts</a>
+        </div>
+      </div>
+      
+        <section id="projects" style="display: none;">
+          <span id="Close" title="Close">&times;</span>
+          <img src="./images/portfolio.jpg" width="50" height="50">
+          <h3>PORTFOLIO</h3>
+          
+          <div class="project">
+            <h4>Project 1</h4>
+              <img src="./images/myweb.png">
+              <p>
+                  A visually stunning website of my own. I was responsible for front-end development and user interface design.
+              </p>
+              <a href="home.html" target="_blank">View Project</a>
+            </div>
+          
+          <div class="project">
+            <h4>Project 2</h4>
+              <img src="./images/sms.png">
+              <p>
+                  An Stock Management System with a focus on user experience. I handled front-end development.
+              </p>
+              <a href="hosted.html" target="_blank">View Project</a>
+          </div>
+          
+          <div class="project">
+              <h4>More Projects under other languages.</h4>
+          </div>
+        </section>
+
+        <section id="resume" style="display: none;">
+          <span id="Close" title="Close">&times;</span>
+          <img src="./images/resume.jpg" alt="Resume Icon" width="50" height="50">
+          <h3>RESUME</h3>
+          <div class="res">
+            <p>I am a dedicated and results-driven professional with a strong background in Web development industry, offering 2+ years of experience. Throughout my career, I have demonstrated a passion for programming, and I'm committed to delivering high-quality work that meets and exceeds expectations. I take pride in my ability to HTML ,CSS JS & PHP and I am constantly seeking opportunities to learn and grow in my field. Please explore my <a id="document" target="_blank" href="myresume.docx">RESUME</a> to learn more about my qualifications, and feel free to reach out if you believe I can contribute to your team or project.</p>
+          </div>
+        </section>
+
+        <section id="services" style="display: none;">
+          <span id="Close" title="Close">&times;</span>
+          <img src="./images/services.png" alt="Services Icon" width="50" height="50">
+          <h3>SERVICES</h3>
+          <div class="serv">
+            <ol>
+              <p>
+                Development.<br>
+                Front-End Development.<br>
+                Back-End Development.<d>
+                Design.<br>
+                Custom Web Applications.<br>
+                Building custom web applications tailored to a client's specific needs.<p>
+                Developing web-based tools, dashboards, and systems.
+              </p>
+            </ol>
+          </div>
+        </section>
+      
+  <section id="contacts" style="display: none;">
+    <span id="Close" title="Close">&times;</span>
+      <h3>CONTACTS</h3>
+      <p>
+          I'm active on several social media platforms and would love to connect with you. Feel free to reach out to me through the following channels:
+          <br>
+          <a href="whatsapp://send?phone=0705200170&text=Hello,%20I%20would%20like%20to%20chat" target="_blank">
+            <p>Whatsapp</p>
+          </a><hr>
+          <a href="tg://msg?text=Hello,%20Hello%20there!%20 %20I%20like%20to%20chat">
+            <p>Telegram</p>
+          </a><hr>
+          <a href="https://www.facebook.com/boniface.muendo.585" target="_blank">
+            <p>Facebook</p>
+          </a><hr>
+          <a href="https://www.linkedin.com/in/boniface-muendo-230352237" target="_blank">
+              <p>Linkedin</p>
+          </a><hr>
+          <a href="https://twitter.com/bmuendo336" target="_blank">
+            <p>Twitter</p>
+          </a>
+          <br>
+          <p>You can also contact me via email at <a href="mailto:bmuendo336@gmail.com">my email</a></p>
+        </p>
+  </section>
   <footer>
-    <p><i class="fab fa-font-awesome"></i>&copy; 2023 All rights are reserved.</p>
-    <P>Developed by <h3>BONIFACE MUENDO </h3> founder of bTekhub Community</P>
-  </h3<>
-</body>
-<script>
-  function Scroll(el){ 
-    window.scrollTo({ 
-      top: document.getElementById(el.dataset.href).offsetTop - 50,
-       behavior: 'smooth',
-       }) 
-       closeNav(el);
-        }
-</script>
+    <p><i class="fab fa-font-awesome"></i>&copy;2023 All rights are reserved.</p>
+    <p class="ft">Developed by <cite> BONIFACE MUENDO</cite></p>
+  </footer>
+</a>
+<script src="script.js"></script>
 </html>
