@@ -25,29 +25,27 @@ var projects = document.getElementById("projects");
 var resume = document.getElementById("resume");
 var services = document.getElementById("services");
 var contacts = document.getElementById("contacts");
-var Close = document.getElementById("Close");
 
-//  openContact.onclick = function(){
-//   contacts.style.display = "block";
-//  }
-//  openResume.onclick = function(){
-//   resume.style.display = "block";
-//  }
-//  openServices.onclick = function(){
-//   services.style.display= "block";
-//  }
-//  openProjects.onclick = function(){
-//   projects.style.display = "block";
-//  } 
-//  Close.onclick = function(){
-//   resume.style.display = "none";
-//  }
-//  Close.onclick = function(){
-//   projects.style.display = "none";
-//  }
-//  Close.onclick = function(){
-//   contacts.style.display = "none";
-//  }
-//  Close.onclick = function(){
-//   services.style.display = "none";
-//  }
+ openContact.onclick = function(){
+  contacts.style.display = "block";
+ }
+ openResume.onclick = function(){
+  resume.style.display = "block";
+ }
+ openServices.onclick = function(){
+  services.style.display= "block";
+ }
+ openProjects.onclick = function(){
+  projects.style.display = "block";
+ }
+ //the closing button x 
+ document.addEventListener("DOMContentLoaded", function() {
+  var closeButtons = document.querySelectorAll("#Close");
+
+  closeButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+      var section = button.parentElement;
+      section.style.display = "none";
+    });
+  });
+});
