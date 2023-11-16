@@ -60,18 +60,26 @@
   #photo {
     text-align: center;
     position: relative;
-    /* border-radius: 50%; */
-    margin: 20px;
+    padding: 20px;
     float: left;
     width: 30%;
-    background: linear-gradient(to top right, rgb(49, 112, 184), rgb(25, 220, 25), rgb(51, 51, 134));
+    background: linear-gradient(to top right, rgb(10, 241, 79), rgb(3, 125, 240), rgb(51, 51, 134));
   }
   
   #photo img {
     background: white;
     width: 200px;
-    height: 200px;
     border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  #photo h2 {
+    color: #333;
+  }
+  
+  #photo .role {
+    color: rgb(71, 13, 231);
   }
   
   .role {
@@ -88,30 +96,23 @@
       content: "Building Awesome Websites";
     }
   }
-  #features {
-    display: none;
-    flex: wrap;
-    flex-direction: row;
-    justify-content: center;
-    margin: 20px 0;
-  }
-  #contacts{
-    position: relative;
-    left: 10pc;
-    top: 6pc;
-    background-color: rgb(194, 194, 24);
-    color: black;
-    padding: 10px;
-    width: 50%;
-  }
-  #contacts>p>a{
-    width: 50px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    /* border-radius: 50%; */
-    text-decoration: none;
-  }
+  /* Style for the photo section */
+
+#circ {
+  text-align: center;
+  padding: 20px;
+}
+
+#circ h2 {
+  color: #333;
+}
+
+#circ fieldset {
+  border: 2px solid #333;
+  padding: 10px;
+  margin-top: 20px;
+}
+
   span{
     position: relative;
     top: 0;
