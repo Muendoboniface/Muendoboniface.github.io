@@ -60,7 +60,6 @@
   #photo {
     text-align: center;
     position: relative;
-    padding: 20px;
     float: left;
     width: 30%;
     background: linear-gradient(to top right, rgb(10, 241, 79), rgb(3, 125, 240), rgb(51, 51, 134));
@@ -85,19 +84,7 @@
   .role {
     font-weight: bold;
     font-size: 1.2rem;
-    animation: textChange 5s linear infinite alternate;
   }
-  
-  @keyframes textChange {
-    0% {
-      content: "I'm a Full-Stack Developer";
-    }
-    100% {
-      content: "Building Awesome Websites";
-    }
-  }
-  /* Style for the photo section */
-
 #circ {
   text-align: center;
   padding: 20px;
@@ -119,11 +106,58 @@
     left: 8pc;
     font-size: 36px;
     cursor: pointer;
+    color: black;
   }
   span:hover{
     color: red;
     font-weight: bolder;
   }
+
+section {
+  max-width: 800px;
+  position: relative;
+  top: 6pc;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #b9cbd4;
+  border: 2px solid #837676;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#projects img,
+#resume img,
+#services img,
+#contacts img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#projects h3,
+#resume h3,
+#services h3,
+#contacts h3 {
+  color: #3a0303;
+}
+
+.project {
+  margin-top: 20px;
+}
+
+.project h4 {
+  color: #333;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+#contacts >a>p{
+  display: flex;
+}
   footer {
     /* width: 100%; */
     position: relative;
@@ -137,7 +171,7 @@
     flex-direction: row;
   }
   /* Mobile styles */
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     body {
       background-color: #0b8488;
       font-size: 15px;

@@ -38,6 +38,7 @@ var contacts = document.getElementById("contacts");
  openProjects.onclick = function(){
   projects.style.display = "block";
  }
+ 
  //the closing button x 
  document.addEventListener("DOMContentLoaded", function() {
   var closeButtons = document.querySelectorAll("#Close");
