@@ -15,7 +15,7 @@ function animateText() {
   currentTextIndex = (currentTextIndex + 1) % textArray.length;
 }
 
-setInterval(animateText, 5000); // Change text every 2 seconds
+setInterval(animateText, 5000); 
 
 var openResume = document.getElementById("openResume");
 var openContact = document.getElementById("openContact");
@@ -39,10 +39,35 @@ var contacts = document.getElementById("contacts");
   projects.style.display = "block";
  }
  
- //the closing button x 
+ 
  document.addEventListener("DOMContentLoaded", function() {
   var closeButtons = document.querySelectorAll("#Close");
+  var sections = document.querySelectorAll("section");
 
+  function closeAllSections() {
+    sections.forEach(function(section) {
+      section.style.display = "none";
+    });
+  }
+
+  function handleTabClick(clickedSection) {
+    closeAllSections();
+
+    clickedSection.style.display = "block";
+  }
+
+  var tabs = document.querySelectorAll(".tabs a");
+
+  tabs.forEach(function(tab) {
+    tab.addEventListener("click", function(event) {
+      event.preventDefault(); 
+      var targetSectionId = tab.getAttribute("href").substring(1);
+      var targetSection = document.getElementById(targetSectionId);
+
+      handleTabClick(targetSection);
+    });
+  });
+//the closing button x 
   closeButtons.forEach(function(button) {
     button.addEventListener("click", function() {
       var section = button.parentElement;
