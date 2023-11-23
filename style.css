@@ -162,11 +162,22 @@ section {
 #contacts >a>p{
   display: flex;
 }
-  footer {
+footer {
     background: linear-gradient(to bottom left, rgb(4, 0, 0) 20px, green 90%);
-    padding: 10px;
+    text-align: center;
+    padding: 20px;
     color: #fff;
-  }
+    position: relative;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer .ft {
+    font-style: italic;
+    color: #aaa;
+}
   /* Mobile styles */
   @media screen and (max-width: 900px) {
     body {
